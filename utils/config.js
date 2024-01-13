@@ -1,0 +1,32 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
+const {
+	PORT,
+	MYSQL_HOST,
+	MYSQL_USER,
+	MYSQL_PASSWORD,
+	MYSQL_DB,
+	SMTP_HOST,
+	SMTP_PORT,
+	SMTP_USER,
+	SMTP_PASS,
+	SECRET_KEY,
+	EXPIRE_TOKEN,
+	UPLOADS_DIR,
+} = process.env;
+
+module.exports = {
+	PORT,
+	MYSQL_HOST,
+	MYSQL_USER,
+	MYSQL_PASSWORD,
+	MYSQL_DB,
+	SMTP_HOST,
+	SMTP_PORT,
+	SMTP_USER,
+	SMTP_PASS,
+	SECRET_KEY,
+	EXPIRE_TOKEN,
+	UPLOADS_DIR,
+};
